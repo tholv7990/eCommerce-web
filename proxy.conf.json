@@ -1,0 +1,7 @@
+{
+    "/api/*": {
+        "target": "http://ecommerceapi-env.eba-ptb8m4cn.ap-southeast-1.elasticbeanstalk.com/",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}

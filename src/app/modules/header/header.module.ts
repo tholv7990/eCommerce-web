@@ -18,6 +18,8 @@ import { MegamenuComponent } from './components/megamenu/megamenu.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { NavComponent } from './components/nav/nav.component';
 import { TopbarComponent } from './components/topbar/topbar.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AccountService } from 'src/libs';
 
 @NgModule({
     declarations: [
@@ -37,6 +39,7 @@ import { TopbarComponent } from './components/topbar/topbar.component';
         // modules (angular)
         CommonModule,
         RouterModule,
+        ReactiveFormsModule,
         // modules
         SharedModule
     ],
@@ -44,6 +47,9 @@ import { TopbarComponent } from './components/topbar/topbar.component';
         // components
         HeaderComponent,
         DropcartComponent
+    ],
+    providers: [
+        AccountService
     ]
 })
 export class HeaderModule { }
