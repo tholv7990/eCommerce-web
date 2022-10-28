@@ -58,10 +58,6 @@ const routes: Routes = [
                 loadChildren: () => import('./modules/shop/shop.module').then(m => m.ShopModule)
             },
             {
-                path: 'blog',
-                loadChildren: () => import('./modules/blog/blog.module').then(m => m.BlogModule)
-            },
-            {
                 path: 'account',
                 loadChildren: () => import('./modules/account/account.module').then(m => m.AccountModule)
             },

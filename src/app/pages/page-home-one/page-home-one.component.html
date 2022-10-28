@@ -27,10 +27,6 @@
     (groupChange)="groupChange(latestProducts, $event)"
 ></app-block-products-carousel>
 
-<app-block-posts header="Latest News" layout="list-sm" [posts]="posts"></app-block-posts>
-
-<app-block-brands [brands]="(brands$|async) || []"></app-block-brands>
-
 <app-block-product-columns>
     <app-block-product-columns-item header="Top Rated Products" [products]="(columnTopRated$|async) || []"></app-block-product-columns-item>
     <app-block-product-columns-item header="Special Offers" [products]="(columnSpecialOffers$|async) || []"></app-block-product-columns-item>

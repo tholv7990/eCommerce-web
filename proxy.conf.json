@@ -1,6 +1,6 @@
 {
     "/api/*": {
-        "target": "http://ecommerceapi-env.eba-ptb8m4cn.ap-southeast-1.elasticbeanstalk.com/",
+        "target": "http://localhost:3001",
         "secure": false,
         "logLevel": "debug"
     }
