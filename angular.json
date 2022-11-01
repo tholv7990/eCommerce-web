@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "stroyka": {
+    "letho": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/stroyka/browser",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -92,10 +92,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "stroyka:build:production"
+              "browserTarget": "letho:build:production"
             },
             "development": {
-              "browserTarget": "stroyka:build:development"
+              "browserTarget": "letho:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -103,7 +103,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "stroyka:build"
+            "browserTarget": "letho:build"
           }
         },
         "test": {
@@ -130,7 +130,7 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/stroyka/server",
+            "outputPath": "dist",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json",
             "inlineStyleLanguage": "scss"
@@ -157,12 +157,12 @@
           "builder": "@nguniversal/builders:ssr-dev-server",
           "configurations": {
             "development": {
-              "browserTarget": "stroyka:build:development",
-              "serverTarget": "stroyka:server:development"
+              "browserTarget": "letho:build:development",
+              "serverTarget": "letho:server:development"
             },
             "production": {
-              "browserTarget": "stroyka:build:production",
-              "serverTarget": "stroyka:server:production"
+              "browserTarget": "letho:build:production",
+              "serverTarget": "letho:server:production"
             }
           },
           "defaultConfiguration": "development"
@@ -176,12 +176,12 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "stroyka:build:production",
-              "serverTarget": "stroyka:server:production"
+              "browserTarget": "letho:build:production",
+              "serverTarget": "letho:server:production"
             },
             "development": {
-              "browserTarget": "stroyka:build:development",
-              "serverTarget": "stroyka:server:development"
+              "browserTarget": "letho:build:development",
+              "serverTarget": "letho:server:development"
             }
           },
           "defaultConfiguration": "production"

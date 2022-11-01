@@ -1,5 +1,5 @@
 {
-  "name": "stroyka",
+  "name": "letho",
   "version": "1.18.0",
   "scripts": {
     "ng": "ng",
@@ -9,10 +9,10 @@
     "test": "ng test",
     "sprite": "svg-sprite --config src/sprite-config.json src/svg/*.svg",
     "start:ssr": "npm run build:ssr && npm run serve:ssr",
-    "dev:ssr": "ng run stroyka:serve-ssr",
-    "serve:ssr": "node dist/stroyka/server/main.js",
-    "build:ssr": "ng build && ng run stroyka:server",
-    "prerender": "ng run stroyka:prerender"
+    "dev:ssr": "ng run letho:serve-ssr",
+    "serve:ssr": "node dist/main.js",
+    "build:ssr": "ng build && ng run letho:server",
+    "prerender": "ng run letho:prerender"
   },
   "private": true,
   "dependencies": {
